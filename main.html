@@ -72,11 +72,11 @@
             Enter your details and Find out your Love compatibility with your partner.
         </p>
         <div class="candidate1Details">
-            <form class="allDetails">
+            <form class="allDetails" onsubmit="showPercentage(event)">
                 <div class="lover1">
                     <div class="details">
                         <label>Your name*</label>
-                        <input required class="userDetail nameInput" placeholder="Enter Your Name" />
+                        <input required class="userDetail nameInput" type="text" placeholder="Enter Your Name" />
                     </div>
                     <div class="details">
                         <label for="gender">Your Gender*</label>
@@ -163,7 +163,7 @@
                 <div class="lover2">
                     <div class="details">
                         <label>Your Partner name*</label>
-                        <input required class="userDetail nameInput" placeholder="Enter Your Name" />
+                        <input required class="userDetail nameInput" type="text" placeholder="Enter Your Name" />
                     </div>
                     <div class="details">
                         <label for="gender">Partner Gender*</label>
@@ -253,7 +253,7 @@
                 <p>How much do you love him or her on a scale from 1 to 100:*</p>
             </div>
             <div>
-                <input required placeholder="Type here" />
+                <input required placeholder="Type here" type="number" />
             </div>
         </div>
         <div class="loveRate">
@@ -261,11 +261,11 @@
                 <p>How much do you think he or she loves you on a scale from 1 to 100:*</p>
             </div>
             <div>
-                <input required placeholder="Type here" />
+                <input required placeholder="Type here" type="number" />
             </div>
         </div>
         <div class="calcbuttonmodel">
-            <button class="calcBtn" type="button">GET CALCULATE</button>
+            <button class="calcBtn" type="submit">GET CALCULATE</button>
         </div>
         </form>
     </section>
