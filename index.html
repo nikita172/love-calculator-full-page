@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header class="headerSection">
+        <div class="logoSection">
+            <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/instaastro-logo.svg">
+        </div>
+        <div class="headerSectionRight">
+            <a class="headerSectionButton">
+                <img src="icons/message-circle.svg">
+                Chat with Astrologer
+            </a>
+            <a class="headerSectionButton">
+                <img src="icons/phone.svg">
+                Talk to Astrologer
+            </a>
+            <button class="loginButton">Login</button>
+        </div>
+    </header>
+    <nav class="navBarSection">
+        <ul class="navBar">
+            <li class="navList">Home</li>
+            <li class="navList">Kundli</li>
+            <li class="navList">Matchmaking</li>
+            <li class="navList">Horoscope</li>
+            <li class="navList">Live <sup style="background: red ; 
+            color : white;
+            position: relative;
+            top:-9px;
+            left:-10px;
+            padding:2px 5px;
+            font-size: 10px;
+            border-radius: 6px;">
+                    New</sup>
+            </li>
+            <li class="navList">Panchang</li>
+            <li class="navList">Calendar</li>
+            <li class="navList">Blog</li>
+        </ul>
+    </nav>
+    <section class="pagesLink">
+        <a class="pageLink" href="#">Home</a>
+        >
+        <a class="pageLink" href="#">Relationship</a>
+        >
+        <a class="pageLink currentPage" href="#">Love Calculator</a>
+    </section>
+    <section class="desc">
+        <div class="heartImg">
+            <img src="	https://instaastro-static-files.s3.amazonaws.com/static/img/icons/love-calculator-image.svg" />
+        </div>
+        <div class="descDetails">
+            <h1>Love Calculator</h1>
+            <p>Want to know the chances of your love being successful or not? InstaAstro presents Love Calculator
+                Online to calculate the love between you and your partner. Enter your details and find out the love
+                compatibility.</p>
+        </div>
+    </section>
+
+    <section class="inputDetails">
+        <h1>Free Love Calculator</h1>
+        <p class="inputPara">
+            Enter your details and Find out your Love compatibility with your partner.
+        </p>
+        <div class="candidate1Details">
+            <form class="allDetails" onsubmit="showPercentage(event)">
+                <div class="lover1">
+                    <div class="details">
+                        <label>Your name*</label>
+                        <input required class="userDetail nameInput" type="text" placeholder="Enter Your Name" />
+                    </div>
+                    <div class="details">
+                        <label for="gender">Your Gender*</label>
+                        <select name="gender" id="gender" class="userDetail" required>
+                            <option value="" disabled selected hidden>Select Gender</option>
+                            <option value="" disabled>Select Your Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="details ">
+                        <label>Your DOB*</label>
+                        <div class="detailSection">
+                            <select class="userDetail" required>
+                                <option value="" disabled selected hidden>Date</option>
+                                <option disabled>Select Date</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                            <select class="userDetail" required>
+                                <option value="" disabled selected hidden>Month</option>
+                                <option disabled> Select Month</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <select class="userDetail" required>
+                                <option value="" disabled selected hidden>year</option>
+                                <option disabled>Select Year</optiondisabled>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="lover2">
+                    <div class="details">
+                        <label>Your Partner name*</label>
+                        <input required class="userDetail nameInput" type="text" placeholder="Enter Your Name" />
+                    </div>
+                    <div class="details">
+                        <label for="gender">Partner Gender*</label>
+                        <select name="gender" id="gender" class="userDetail" required>
+                            <option value="" disabled selected hidden>Select Gender</option>
+                            <option disabled>Select Your Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    <div class="details ">
+                        <label>Partner DOB*</label>
+                        <div class="detailSection">
+                            <select class="userDetail" required>
+                                <option value="" disabled selected hidden>Date</option>
+                                <option disabled>Select Date</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                                <option>13</option>
+                                <option>14</option>
+                                <option>15</option>
+                                <option>16</option>
+                                <option>17</option>
+                                <option>18</option>
+                                <option>19</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30</option>
+                                <option>31</option>
+                            </select>
+                            <select class="userDetail" required>
+                                <option value="" disabled selected hidden>Month</option>
+                                <option disabled>Select Month</option>
+                                <option>01</option>
+                                <option>02</option>
+                                <option>03</option>
+                                <option>04</option>
+                                <option>05</option>
+                                <option>06</option>
+                                <option>07</option>
+                                <option>08</option>
+                                <option>09</option>
+                                <option>10</option>
+                                <option>11</option>
+                                <option>12</option>
+                            </select>
+                            <select class="userDetail" required>
+                                <option value="" disabled selected hidden>year</option>
+                                <option disabled>Select Year</option>
+                                <option>1996</option>
+                                <option>1997</option>
+                                <option>1998</option>
+                                <option>1999</option>
+                                <option>2000</option>
+                                <option>2001</option>
+                                <option>2002</option>
+                                <option>2003</option>
+                                <option>2004</option>
+                                <option>2005</option>
+                                <option>2006</option>
+                                <option>2007</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div class="loveRate">
+            <div>
+                <p>How much do you love him or her on a scale from 1 to 100:*</p>
+            </div>
+            <div>
+                <input required placeholder="Type here" type="number" />
+            </div>
+        </div>
+        <div class="loveRate">
+            <div>
+                <p>How much do you think he or she loves you on a scale from 1 to 100:*</p>
+            </div>
+            <div>
+                <input required placeholder="Type here" type="number" />
+            </div>
+        </div>
+        <div class="calcbuttonmodel">
+            <button class="calcBtn" type="submit">GET CALCULATE</button>
+        </div>
+        </form>
+    </section>
+    <div class="queries">
+        <p>
+            Do you love someone and wish to know if they are the special ones? Do you want to check your love
+            compatibility strength with your partner? Then, take the love compatibility test and find how much you
+            score on the love calculator. This tool will answer all your questions like "does she love me?" and "are
+            we perfect for each other?"
+        </p>
+        <p>
+            This Love Calculator Online tool is a direct method of finding out whether you and your partner will be
+            compatible or not. Simply enter your and your partner's name and birth details, and get your
+            understanding of how much you love each other.
+        </p>
+        <p>
+            InstaAstro brings you an authentic way to calculate Love percentage and decode your love connection. Our
+            ultimate love test calculator online conducts a love compatibility test based on your and your partner's
+            name and birth details. Then, it displays a love percentage that tells how well you match with your
+            partner or what are the odds of success of your relationship. So, be ready to make the most of the
+            accurate love calculator and find your genuine soulmate connection with this love tracker?
+        </p>
+        <h2>
+            How Accurate is the Love Compatibility Calculator?
+        </h2>
+        <p>The Love Compatibility calculator or Love Test Calculator online offers results proven to be 100% accurate.
+            In addition, the complex algorithms on which the Online Love Calculator works offer complete authenticity to
+            love meter test results.
+        </p>
+        <h2>
+            How Does Love Percentage Calculator Work?
+        </h2>
+        <p>
+            Is it a true love test? True Love Calculator follows specific algorithms to calculate love percentage. This
+            Love compatibility test or relation finder tool follows an ancient system of numerology that utilizes your
+            date of birth and name for creating love calculations. It also includes planetary influences analysed solely
+            based on your date of birth. Since the name and date of birth are the main aspects of finding a love
+            percentage, the love calculator online is referred to as a true love name match or accurate love calculator
+            by date of birth.
+        </p>
+        <h2>
+            How Can A True Love Calculator Help?
+        </h2>
+        <p>
+            Finding your Love Compatibility or Love Percentage works wonders in your life. Calculating your true love
+            percentage by real love percentage calculator by date of birth and name gives you clarity and detailed
+            insights into your relationship. A love parameter by a true love calculator motivates you to build a better
+            bond with your match. It drives you to improve weaker aspects and maintain your bond. The Love Calculator by
+            name and date of birth, thus, is a fantastic tool to calculate your love compatibility with your companion.
+            Even if you are in love with someone and desire to check if they are your soulmate or not, this online love
+            marriage calculator by date of birth is the perfect way to find your best love match.
+        </p>
+    </div>
+    <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq1">
+            <div class="ques">
+                <p>Are love calculators accurate</p>
+                <span class="span">Regardless of what any astrologer or 'expert' says, how a person views or defines
+                    love is up to
+                    them.
+                    The results of any calculator should have little bearing on whether or not a person chooses to
+                    pursue
+                    it.
+                </span>
+            </div>
+            <button class="scrollDown"><img src="icons/chevron-down.svg" /></button>
+        </div>
+        <div class="faq1">
+            <div class="ques">
+                <p>Are love calculators accurate</p>
+                <span class="span">Regardless of what any astrologer or 'expert' says, how a person views or defines
+                    love is up to
+                    them.
+                    The results of any calculator should have little bearing on whether or not a person chooses to
+                    pursue
+                    it.
+                </span>
+            </div>
+            <button class="scrollDown"><img src="icons/chevron-down.svg" /></button>
+        </div>
+        <div class="faq1">
+            <div class="ques">
+                <p>Are love calculators accurate</p>
+                <span class="span">Regardless of what any astrologer or 'expert' says, how a person views or defines
+                    love is up to
+                    them.
+                    The results of any calculator should have little bearing on whether or not a person chooses to
+                    pursue
+                    it.
+                </span>
+            </div>
+            <button class="scrollDown"><img src="icons/chevron-down.svg" /></button>
+        </div>
+        <div class="faq1">
+            <div class="ques">
+                <p>Are love calculators accurate</p>
+                <span class="span">Regardless of what any astrologer or 'expert' says, how a person views or defines
+                    love is up to
+                    them.
+                    The results of any calculator should have little bearing on whether or not a person chooses to
+                    pursue
+                    it.
+                </span>
+            </div>
+            <button class="scrollDown"><img src="icons/chevron-down.svg" /></button>
+        </div>
+    </section>
+    <section class="horoscopeSection">
+        <div>
+            <h1 class="horoscopeHeading">DAILY HOROSCOPES</h1>
+            <p class="horoscopePara">Your daily zodiac sign reading for free</p>
+        </div>
+        <div class="zodiacSign">
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+            <div class="zodiac">
+                <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/horoscopes/aries.svg">
+                <p>Aries</p>
+                <p>Mar 21-Apr 19</p>
+            </div>
+        </div>
+    </section>
+    <section class="secondLastFooter">
+        <div class="slFooter">
+            <div class="goToLinks">
+                <ul>
+                    <li>Home</li>
+                    <li>Talk with Astrologer</li>
+                    <li>Live Astrologer</li>
+                    <li>Daily Horoscope</li>
+                </ul>
+            </div>
+            <div class="goToLinks">
+                <ul>
+                    <li>Kundli</li>
+                    <li>Match Making</li>
+                    <li>Blog</li>
+                    <li>Calendar</li>
+                </ul>
+            </div>
+            <div class="goToLinks">
+                <ul>
+                    <li>Arti Sangrah</li>
+                    <li>Wallpapers</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footerMenu">
+            <div class="linksMenu">
+                <h2>Useful Links</h2>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Condition</li>
+                    <li>Careers</li>
+                    <li>Astrologer Registration</li>
+                    <li>Help</li>
+                </ul>
+            </div>
+            <div class="linksDownload">
+                <div class="downloads">
+                    <h2>Download Our App</h2>
+                    <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/google-play.png
+                " />
+                    <img src="https://instaastro-static-files.s3.amazonaws.com/static/img/app-store.png" />
+                </div>
+            </div>
+            <div class="contacts">
+                <h2>Contact Us</h2>
+                <p>Phone: +91- 6366-937-227</p>
+                <p>Email: support@instaastro.in</p>
+                <div class="contactIcons">
+                    <img class="linksImg" src="icons/facebook.svg">
+                    <img src="icons/instagram.svg">
+                    <img src="icons/linkedin.svg">
+                    <img src="icons/twitter.svg">
+                    <img src="icons/youtube (1).svg">
+                </div>
+            </div>
+        </div>
+        <div class="copyrightLogo">
+            <p>Copyright © Instaastro 2022</p>
+        </div>
+    </section>
+    <section class="percentShow">
+        <div class="modalDetails">
+            <div class="modalDetailsContent">
+                <header>
+                    <button type="click" class="closeBtn">x</button>
+                </header>
+                <div class="content">
+                    <div class="body">
+                        <img
+                            src="https://instaastro-static-files.s3.amazonaws.com/static/img/icons/love-calculator-modal-image.png">
+                        <p>The Result of Your Love is Lies in Numbers. The Percentage is:</p>
+                        <h2><img src="https://instaastro-static-files.s3.amazonaws.com/static/img/icons/heart-red.png
+                    ">
+                            <span class="displayAns"> 35%</span>
+                        </h2>
+                    </div>
+                    <button type="click" class="checkAgainButton">CHECK AGAIN</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
