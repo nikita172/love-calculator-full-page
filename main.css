@@ -1,3 +1,4 @@
+
 *{
     font-family:  sans-serif;
     color: rgb(50, 50, 50);
@@ -7,8 +8,7 @@
 .headerSection{
     display: flex;
     align-items: center;
-    margin:25px auto;
-    
+    margin:25px auto;    
     max-width: 75%;
 }
 .logoSection{
@@ -58,14 +58,12 @@
 .navBar{
     list-style: none;
     display: flex;
-    font-size: 1rem;
-    
+    font-size: 1rem;    
 }
 .navList{
    padding-top: 13px;
    padding-bottom: 13px;
    margin-right:25px;
-
 }
 .navList:hover{
     cursor: pointer;
@@ -90,21 +88,18 @@
     display: flex;
     padding:10px 0px;
     margin-bottom: 40px;
-
 }
 .heartImg{
     background: rgb(233, 233, 233);
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    align-items: center;
-  
+    align-items: center;  
 }
 .heartImg img{
     height:110px;
     width:110px;
     padding:20px;
-
 }
 .descDetails{
     margin-left: 25px;
@@ -119,8 +114,7 @@
 }
 .inputDetails{
     background: rgba(199, 198, 198, 0.2);;   
-    padding:60px calc(100% - 87.6%);
-   
+    padding:60px calc(100% - 87.6%);   
 }
 .inputDetails h1{
     text-align: center;
@@ -130,17 +124,11 @@
 .inputPara{
     text-align: center;
     margin-bottom: 15px;
-    font-size: 1.2rem;
-    
-}
-select{
-
+    font-size: 1.2rem;    
 }
 .candidate1Details{   
-    margin-top: 35px;
-   
+    margin-top: 35px;   
 }
-
 .details label{
     padding-bottom:5px;
 }
@@ -153,28 +141,21 @@ select{
     position:relative;
     left:0;
     right: 0;
-    width: auto;
- 
-   
-   
+    width: auto;  
 }
-
 .details{
     display: flex;
     flex-direction: column;
     flex: 1;
 }
-
 .detailSection{
     display: flex;
 }
-
 .nameInput::placeholder {
     color:rgb(193, 193, 193);
 }
 .userDetail:focus{
-    outline: none;
-    
+    outline: none;    
 }
 .lover1{
     display: flex;    
@@ -183,13 +164,10 @@ select{
 .lover2{
     display: flex;
 }
-
 .loveRate{
     display: flex;
-    align-items: center;
-    
-    margin-top: 30px;
-   
+    align-items: center;   
+    margin-top: 30px;   
 }
 .loveRate div p{
     margin-right:50px;
@@ -221,18 +199,14 @@ select{
     border-radius: 2px;
     padding:15px 40px;
     text-align: center;
-    color: white;
-    
-    
+    color: white;   
 }
 .calcBtn:hover{
     cursor:pointer;
     background: rgba(249, 214, 38, 0.957);
 }
 .queries{
-    margin:60px calc(100% - 87.6%);
-  
-    
+    margin:60px calc(100% - 87.6%);   
 }
 .queries p{
     padding:10px;
@@ -246,9 +220,7 @@ select{
    background: rgba(233, 233, 233,0.5);
 }
 .faqs h2{
-    font-size: 1.8rem;
-   
-    
+    font-size: 1.8rem;    
 }
 .faq1{
     margin-top: 20px;
@@ -259,17 +231,13 @@ select{
     font-size: 20px;
     justify-content: space-between;
 }
-
 .faq1 p{
     font-size: medium;
     color: black;
-   
-
 }
 .ques span{
     display: none;
-    font-size: 17px;
-   
+    font-size: 17px;   
     font-weight: lighter;
     color: #787979;
 }
@@ -277,32 +245,25 @@ select{
     background: none;
     border: none;
 }
-
 .horoscopeSection{
     padding:50px calc(100% - 87.6%);
 }
 .horoscopeHeading{
-    text-align: center;
-    
-   
+    text-align: center;   
 }
 .horoscopePara{
     margin-top: 10px;
     text-align: center;
     font-weight:bold;
-    color:rgb(72, 72, 72)
-   
+    color:rgb(72, 72, 72)   
 }
 .zodiacSign{
     display: flex;
     flex-wrap: wrap;
     margin: 30px 0px;
-    
-
     justify-content: space-between;
 }
-.zodiac{
-    
+.zodiac{    
     border:1px solid rgb(180, 180, 180);
     padding:20px 30px;
     border-radius: 3px;
@@ -312,7 +273,6 @@ select{
     margin-right: 10px;
     margin-bottom: 20px;
     transition: border 0.25s ease;
-
 }
 .zodiac p{
     margin-top: 4px;
@@ -320,26 +280,20 @@ select{
 }
 .zodiac:hover {
     cursor: pointer;
-    border:1px solid #f77e1b;
-    
-    
+    border:1px solid #f77e1b;    
 }
 .zodiac:hover p{
     color:#f77e1b;
 }
-
 .secondLastFooter{
-    background: #2c2d2e;
-   
+    background: #2c2d2e;   
 }
 .slFooter{
     padding:60px 200px;
     display: flex;
-
 }
 .goToLinks{
-    flex:1;
-   
+    flex:1;  
 }
 .goToLinks ul{
     list-style: none;
@@ -350,14 +304,12 @@ select{
     font-size: 1rem;
     border-bottom: 1px solid rgb(121, 120, 120);
     padding-bottom: 7px;
-    margin-bottom: 10px;
-  
+    margin-bottom: 10px;  
 }
 .goToLinks ul li:hover{
     cursor: pointer;
     color:#f77e1b;
 }
-
 .footer{
     background: #212529;
 }
@@ -385,7 +337,6 @@ select{
     cursor: pointer;
     color:#f77e1b;
 }
-
 .linksDownload{
     padding: 20px;
     flex:1;
@@ -407,7 +358,6 @@ select{
 .linksDownload img:hover{
     cursor: pointer;
 }
-
 .contacts{
     flex: 1;
     padding: 20px;
@@ -419,7 +369,6 @@ select{
 .contacts p{
     color: white;
     margin-bottom: 10px;
-
 }
 .contactIcons{
     margin-top: 20px;
@@ -432,12 +381,9 @@ select{
     background:#3a434d ;
     border: 1px solid rgb(48, 74, 81);
 }
-
 .contactIcons img:hover{
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
-
 .copyrightLogo{
     border-top: 1px solid white;
     padding:20px;
@@ -450,12 +396,11 @@ select{
     animation: openModal 0.25s ;
     position: fixed;
     display: none;
-    left: 0 ;
+    left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.75);
-    
+    background: rgba(0, 0, 0, 0.75);    
 }
 @keyframes openModal {
     0% {
@@ -465,22 +410,19 @@ select{
         opacity: 1;
     }
 }
-
-
 .modalDetails{
     padding:20px;
-    
+    position:absolute;
+    top:15%;
+    left:29%;    
     background: white;    
-   width:50%
-    
-    
+    width:40%;
+    border-radius: 7px;    
 }
 .modalDetailsContent{
     display: flex;
     flex-direction: column;
-    background: white;
-    
-    
+    background: white;   
 }
 .modalDetailsContent header{
     text-align: end;
@@ -517,6 +459,14 @@ select{
     text-align: center;
     border:none;
 }
+
+
+
+
+
+
+
+
 
 
 
