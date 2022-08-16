@@ -18,7 +18,8 @@ function openAns(){
     }
 }
 
-function showPercentage(){   
+function showPercentage(event){ 
+    event.preventDefault();  
     const percent = Math.floor((Math.random()*100)+1)
     displayans.textContent=percent + "%";
     percentShow.style.display="block"
@@ -29,7 +30,8 @@ function showPercentage(){
 
 function close(){
     percentShow.style.display="none"
+    location.reload()
 }
 
-calcBtn.addEventListener("click" , showPercentage)
+
 scrolldown.addEventListener("click",openAns)
